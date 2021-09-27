@@ -12,6 +12,7 @@ class Users:
         self.status=status
         self.hobbies = hobbies
 
+
     def create_user(self):
 
         # create a user
@@ -48,7 +49,7 @@ class Users:
             all_users = collection.find()
 
             for users in all_users:
-                print(users)
+                print('{}\n'.format(users))
 
         except Exception:
             print('something went wrong')
@@ -111,7 +112,3 @@ class Users:
 
         except Exception:
             print('something went wrong...')
-
-
-
-

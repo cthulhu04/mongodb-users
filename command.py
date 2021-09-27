@@ -2,16 +2,15 @@ from users import Users
 
 def Command():
     intro = """
-    before we run this function make sure you have a database and a collection in mongodb if you dont
-    have press 'exit' or if you wanna quit this function else lets gooooooooooooooooo.
     for create a user command 'create'.
     for get all user command 'all users'
     for one user press 'one user' and than put the user id from the '_id' 
     for update a user pes 'update user' and than put the user id from the '_id' and then what you want to change
     for delete a user pes 'delete user' and then put the user id from the '_id'
+    if you wanna quit command 'exit'
     """
 
-    the_user = Users("clark", "kent", "superman", "superman@mail.com", "test12345", True, ['game', 'travel'])
+    the_user = Users("the user", "kent", "superman", "superman@mail.com", "test12345", True, ['game', 'travel'])
    
     while True:
 
