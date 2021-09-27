@@ -70,7 +70,7 @@ class Users:
             print('something went wrong...')
 
 
-    def update_user(self, userId):
+    def update_user(self, userId, updateObject):
         # update a user by @userId to find and update the user in the db
         try:
             
@@ -78,7 +78,7 @@ class Users:
 
             user_id = { "_id": ObjectId(userId) }
 
-            update = { "$set": { "name": "thor" } }
+            update = { "$set": updateObject }
 
             user = collection.update_one(user_id, update)
 
