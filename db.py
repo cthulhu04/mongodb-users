@@ -1,5 +1,5 @@
 import pymongo
-cluster = "mongodb+srv://incapu:uDPLxJWzCJZat9Sr@cluster0.b5xto.mongodb.net/company?retryWrites=true&w=majority"
+cluster = "mongodb+srv://<username>:<password>@cluster0.b5xto.mongodb.net/<database>?retryWrites=true&w=majority"
 mongo_client = pymongo.MongoClient(cluster)
 
 def connection():
