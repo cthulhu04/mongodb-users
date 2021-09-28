@@ -58,7 +58,7 @@ class Users:
     def get_user(self, userId):
         # get one user by @userId to find the user in the db
         try:
-            
+
             collection = connection()
 
             user_id = { "_id": ObjectId(userId) }
@@ -74,7 +74,7 @@ class Users:
     def update_user(self, userId, updateObject):
         # update a user by @userId to find and update the user in the db
         try:
-            
+
             collection = connection()
 
             user_id = { "_id": ObjectId(userId) }
@@ -98,7 +98,7 @@ class Users:
     def delete_user(self, userId):
         # delete a user by @userId to find and delete the user in the db
         try:
-        
+
             collection = connection()
 
             user_id = { "_id": ObjectId(userId) }
