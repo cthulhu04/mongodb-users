@@ -1,5 +1,6 @@
 import pymongo
-from url import cluster
+cluster = ""
+
 mongo_client = pymongo.MongoClient(cluster)
 
 def connection():
