@@ -9,7 +9,7 @@ class Users:
         self.username = username
         self.email = email
         self.password =  password
-        self.status=status
+        self.status = status
         self.hobbies = hobbies
 
 

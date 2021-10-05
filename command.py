@@ -16,6 +16,8 @@ def Command():
     if you wanna quit command 'exit'
     """
 
+    user_value_info = []
+
     the_user = Users("the user", "kent", "superman", "superman@mail.com", "test12345", True, ['game', 'travel'])
 
     while True:
@@ -26,6 +28,15 @@ def Command():
             break
 
         if 'create' in command:
+
+            name = input('name: ')
+            lastname = input('lastname: ')
+            username = input('username: ')
+            email = input('email: ')
+            password = input('password: ')
+            status = input('status: ')
+            hobbies = input('hobbies: ')
+
             the_user.create_user()
 
         if 'all users' in command:
